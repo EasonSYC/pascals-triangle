@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[top=1.5cm, left=1.5cm, right=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{tikz}
+
+\title{Pascal's Triangle}
+\author{Eason Shao}
+\date{24/05/2024}
+
+\begin{document}
+
+    \maketitle
+
+    Try and give combinatorial explanations of the identities where possible, as well as from algebraic methods (including definition, binomial expansion and generating functions).\bigskip
+
+    Please experiment with the identities using small examples.
+
+    \begin{enumerate}
+        \item Find and prove the formula for \(^nC_k\), often also denoted as \(\binom{n}{k}\), which stands for the number of choosing \(k\) from \(n\) distinct objects. This is called the \textbf{Choose Coefficient} or the \textbf{Binomial Coefficient}.
+        \item Write down the values of \(\binom{n}{k}\) where \(0 \leq k \leq n \leq 5\). What pattern did you spot, about the relationship between \(\binom{n}{k}\) and \(\binom{n-1}{k-1}\) and \(\binom{n-1}{k}\)
+        \item Prove the \textbf{Pascal's Identity}, which is the pattern spotted above.
+        \item Find and explain the values of \(\binom{n}{0}\) and \(\binom{n}{n}\).
+        \item Prove the following symmetry of the binomial coefficients
+        \[
+            \binom{n}{k} = \binom{n}{n-k}.
+        \]
+        \item Find \(11^n\) where \(0 \leq n \leq 4\). What pattern did you spot? Does it hold for \(n \geq 5\)? Why?
+        \item Write down the expansion of \((a+b)^n\), where \(a, b\) are arbitary real constants, and \(0 \leq n \leq 5\). What pattern did you spot between the coefficients of each term and the entries in Pascal's Triangle?
+        \item Prove the \textbf{Binomial Expansion}, which is the pattern spotted above.
+        \item Find a formula and prove for the following sum:
+        \[
+            \sum_{t = 0}^{n} \binom{n}{t}.
+        \]
+        \item Find a formula and prove for the following sum:
+        \[
+            \sum_{t = 0}^{n} t \binom{n}{t}.
+        \]
+        \item Prove the following identity:
+        \[
+            \sum_{t = 0}^{n} (-1)^t \binom{n}{t} = 0,
+        \]
+        i.e. the odd indexed terms in a row of Pascal's Triangle sum up to the even indexed terms.
+        \item Prove the following identity:
+        \[
+            \sum_{t = k}^{n} \binom{n}{t} \binom{t}{k} = 2^{n - k} \binom{n}{k}.
+        \]
+        \item Prove the following identity:
+        \[
+            \sum_{t = 0}^{n} \binom{n}{t}^2 = \binom{2n}{n}.
+        \]
+        \item Prove the \textbf{Hockey-Stick Identity}, stated as follows:
+        \[
+            \sum_{t = m}^{n} \binom{t}{m} = \binom{n + 1}{m+1}.
+        \]
+        \item Prove the \textbf{Chu-Vandermonde Identity}, stated as follows:
+        \[
+            \sum_{t = 0}^{k} \binom{m}{t}\binom{n-m}{k-t} = \binom{n}{k}.
+        \]
+
+    \end{enumerate}
+\end{document}
